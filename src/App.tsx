@@ -10,6 +10,7 @@ import Discoveries from './pages/public/Discoveries';
 import TheIndex from './pages/public/TheIndex';
 import Apply from './pages/public/Apply';
 import Login from './pages/public/Login';
+import Events from './pages/public/Events';
 
 import BrandDashboard from './pages/dashboard/BrandDashboard';
 import BrandProfile from './pages/dashboard/BrandProfile';
@@ -41,6 +42,7 @@ function App() {
             <Route path="/the-index" element={<TheIndex />} />
             <Route path="/apply/:type" element={<Apply />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/events" element={<Events />} />
           </Route>
           
           {/* Dashboard Routes */}

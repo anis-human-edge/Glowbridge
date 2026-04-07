@@ -20,6 +20,7 @@ export default function Navbar() {
     { label: 'Discoveries', href: '/discoveries' },
     { label: 'For Creators', href: '/creators' },
     { label: 'For Brands', href: '/brands' },
+    { label: 'Events', href: '/events' },
   ];
 
   return (
