@@ -8,21 +8,21 @@ export default {
     extend: {
       colors: {
         ink: '#0C1016',
-        forest: '#20372D',
         stone: '#EDE9E1',
         pearl: '#F8F5EF',
-        moss: '#708B68',
-        clay: '#C46A3C',
-        gold: '#C7A84B',
+        brand: '#b83518',
+        creator: '#1c5c3f',
+        ai: '#3d3075',
+        manager: '#c49a3c',
         // Operational dashboard colors
         surface: '#FFFFFF',
         surfaceHover: '#F9FAFB',
-        borderFocus: '#708B68',
+        borderFocus: '#1c5c3f',
       },
       fontFamily: {
-        sans: ['Plus Jakarta Sans', 'Inter', 'Sora', 'sans-serif'],
-        serif: ['Cormorant Garamond', 'Playfair Display', 'serif'],
-        mono: ['IBM Plex Mono', 'JetBrains Mono', 'monospace'],
+        sans: ['Barlow', 'sans-serif'],
+        serif: ['Libre Baskerville', 'serif'],
+        condensed: ['Barlow Condensed', 'sans-serif'],
       },
       borderRadius: {
         'xl': '1rem',
