@@ -4,22 +4,8 @@ import { ArrowRight, Star, ShieldCheck, MapPin, Target, Sparkles, Building2, Zap
 export default function Home() {
   return (
     <div className="bg-pearl text-ink font-sans antialiased selection:bg-brand selection:text-white pb-20">
-      
-      {/* NATIVE HEADER */}
-      <nav className="fixed w-full flex justify-between items-center p-6 lg:px-12 backdrop-blur-md bg-pearl/80 border-b border-stone/30 z-50">
-        <h1 className="font-serif text-2xl font-bold tracking-tight uppercase">Bridgr.</h1>
-        <div className="flex items-center gap-8 text-sm font-medium">
-          <Link to="/for-brands" className="hover:text-brand transition-colors">FOR BRANDS</Link>
-          <Link to="/for-creators" className="hover:text-creator transition-colors">FOR CREATORS</Link>
-          <div className="w-px h-4 bg-stone"></div>
-          <Link to="/login" className="px-5 py-2.5 bg-ink text-pearl rounded-full hover:bg-ink/80 transition-colors shadow-sm">
-            SIGN IN
-          </Link>
-        </div>
-      </nav>
-
       {/* HERO SECTION */}
-      <section className="pt-48 pb-20 px-6 lg:px-12 max-w-7xl mx-auto flex flex-col items-center text-center opacity-0 animate-[fadeIn_0.5s_ease-out_forwards]">
+      <section className="pt-24 md:pt-32 pb-20 px-6 lg:px-12 max-w-7xl mx-auto flex flex-col items-center text-center">
         
         <span className="text-[11px] font-condensed tracking-[0.3em] uppercase text-ink/50 mb-6 flex items-center justify-center gap-3">
           Authentic Reviews <span className="w-1 h-1 rounded-full bg-ink/30"></span> 
@@ -40,7 +26,7 @@ export default function Home() {
 
         {/* DUAL CTAS */}
         <div className="flex flex-col md:flex-row gap-6 w-full max-w-4xl">
-           <Link to="/register/brand" className="group flex-1 bg-surface border border-stone/50 hover:border-brand/50 hover:shadow-premium rounded-2xl p-6 text-left transition-all duration-300">
+           <Link to="/auth/register/brand" className="group flex-1 bg-surface border border-stone/50 hover:border-brand/50 hover:shadow-premium rounded-2xl p-6 text-left transition-all duration-300">
              <div className="bg-brand/10 w-10 h-10 rounded-full flex items-center justify-center text-brand mb-4">🏷️</div>
              <h3 className="font-serif text-xl mb-2 text-ink">I'm launching a product</h3>
              <p className="text-sm text-ink/60 mb-6">Market intelligence, creator partnerships, and a launchpad event — all in one place.</p>
@@ -49,7 +35,7 @@ export default function Home() {
              </div>
            </Link>
 
-           <Link to="/register/creator" className="group flex-1 bg-surface border border-stone/50 hover:border-creator/50 hover:shadow-premium rounded-2xl p-6 text-left transition-all duration-300">
+           <Link to="/auth/register/creator" className="group flex-1 bg-surface border border-stone/50 hover:border-creator/50 hover:shadow-premium rounded-2xl p-6 text-left transition-all duration-300">
              <div className="bg-creator/10 w-10 h-10 rounded-full flex items-center justify-center text-creator mb-4">✨</div>
              <h3 className="font-serif text-xl mb-2 text-ink">I create content</h3>
              <p className="text-sm text-ink/60 mb-6">Discover products you believe in, build your reputation, and grow your income.</p>
@@ -270,10 +256,10 @@ export default function Home() {
              <h2 className="text-4xl font-serif text-ink mb-4">The room is being filled.</h2>
              <p className="text-ink/60 text-lg max-w-md mb-8">Both sides are curated before each event. Join the platform today—the product pool is open, the next event is close, and spots fill fast.</p>
              <div className="flex flex-col sm:flex-row gap-4">
-               <Link to="/register/brand" className="bg-brand text-white px-8 py-4 rounded-xl flex items-center justify-center gap-2 hover:bg-brand/90 transition-colors shadow-md">
+               <Link to="/auth/register/brand" className="bg-brand text-white px-8 py-4 rounded-xl flex items-center justify-center gap-2 hover:bg-brand/90 transition-colors shadow-md">
                   Submit Product <ArrowUpRight size={18} />
                </Link>
-               <Link to="/register/creator" className="bg-creator text-white px-8 py-4 rounded-xl flex items-center justify-center gap-2 hover:bg-creator/90 transition-colors shadow-md">
+               <Link to="/auth/register/creator" className="bg-creator text-white px-8 py-4 rounded-xl flex items-center justify-center gap-2 hover:bg-creator/90 transition-colors shadow-md">
                   Join as Creator <ArrowUpRight size={18} />
                </Link>
              </div>
